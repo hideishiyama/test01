@@ -1,5 +1,7 @@
 #!/bin/bash
 
-echo -n "Your name? "
-read name
-echo "Hello $name!"
+while [[ -z $name ]]; do
+    echo -n "Your name? "
+    read name
+done
+echo "Hello, $name."
